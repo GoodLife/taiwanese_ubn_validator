@@ -35,3 +35,7 @@ module TaiwaneseUbnValidator
     sum
   end
 end
+
+if defined?(ActiveModel::EachValidator)
+  require 'taiwanese_ubn_validator/rails_validator'
+end
